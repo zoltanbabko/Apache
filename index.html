@@ -1,29 +1,413 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zoltan Babko — Développeur en formation</title>
+    <link rel="stylesheet" href="tooplate-titan-style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur mon site</h1>
-    </header>
-
-    <nav>
-        <a href="/accueil">Accueil</a>
-        <a href="/contact">Contact</a>
-        <a href="/a-propos">À propos</a>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">Zoltan Babko</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#timeline">Parcours</a></li>
+                <li><a href="#portfolio">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#timeline">Parcours</a></li>
+                <li><a href="#portfolio">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="container">
-        <h2>Page d'accueil</h2>
-        <p>Ceci est la page principale du site.</p>
-    </div>
+    <section id="home" class="hero">
+        <div class="hero-bg-animation">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="geo-shape geo-1"></div>
+            <div class="geo-shape geo-2"></div>
+            <div class="particles">
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+                <span class="particle"></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>ZOLTAN BABKO</h1>
+            <p class="subtitle">Développeur en formation — Étudiant EPITECH</p>
+            <p>Étudiant en 3ᵉ année d'informatique. Recherche un stage du <strong>mars 2026</strong> au <strong>juillet 2026</strong>.</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="cta-primary">Voir mes projets</a>
+                <a href="#contact" class="cta-secondary">Me contacter</a>
+            </div>
+            <div class="stats-section">
+                <div class="stat-card">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projets</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Années d'études</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Contributions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">À propos</h2>
+                <p class="section-subtitle">Passionné par le développement et l'innovation numérique</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-intro">
+                    <div class="about-image"></div>
+                    <div class="about-text">
+                        <h3>Présentation</h3>
+                        <p>Je m'appelle Zoltan Babko, j'ai 19 ans et je suis en 3ᵉ année d'informatique à EPITECH, Paris. Je développe des applications web et des solutions full-stack, et je m'intéresse particulièrement à la performance, l'accessibilité et la qualité du code. Je suis disponible pour un stage de mars à juillet 2026.</p>
+                        <p>Contact professionnel : <a href="mailto:zoltan.babko@epitech.eu">zoltan.babko@epitech.eu</a>. Mon profil LinkedIn : <a href="https://www.linkedin.com/in/zoltan-babko/" target="_blank" rel="noopener noreferrer">/in/zoltan-babko/</a>.</p>
+                    </div>
+                </div>
+
+                <div class="about-cards">
+                    <div class="about-card">
+                        <h4>🎯 Mission</h4>
+                        <p>Apprendre, créer et contribuer à des projets qui allient ergonomie et performance technique.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h4>💡 Vision</h4>
+                        <p>Devenir un développeur polyvalent capable de porter des produits de l'idée à la production.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compétences & Outils</h2>
+                <p class="section-subtitle">Compétences techniques et outils que j'utilise régulièrement</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-wrapper">
+                    <div class="skills-visual">
+                        <div class="skills-circle">
+                            <div class="skill-node">
+                                <div class="skill-icon">🎨</div>
+                                <div class="skill-name">UI/UX</div>
+                            </div>
+                            <div class="skill-node">
+                                <div class="skill-icon">⚛️</div>
+                                <div class="skill-name">React</div>
+                            </div>
+                            <div class="skill-node">
+                                <div class="skill-icon">📱</div>
+                                <div class="skill-name">Mobile</div>
+                            </div>
+                            <div class="skill-node">
+                                <div class="skill-icon">⚙️</div>
+                                <div class="skill-name">Backend</div>
+                            </div>
+                            <div class="skill-node">
+                                <div class="skill-icon">🚀</div>
+                                <div class="skill-name">DevOps</div>
+                            </div>
+                            <div class="skill-node">
+                                <div class="skill-icon">💡</div>
+                                <div class="skill-name">Innovation</div>
+                            </div>
+                            <div class="skills-center">⚡</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <h4>Langages</h4>
+                            <p>C, C++, Python, JavaScript, HTML, CSS, Haskell</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width:85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <h4>Bases de données</h4>
+                            <p>PostgreSQL, MariaDB</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width:75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <h4>Outils & Plateformes</h4>
+                            <p>GitHub, Docker, VS Code, GitHub Projects</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width:80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <h4>Systèmes</h4>
+                            <p>Linux, Windows, MacOS</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="width:85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Parcours</h2>
+                <p class="section-subtitle">Formation et expériences</p>
+            </div>
+
+            <div class="timeline-controls">
+                <button class="timeline-filter active" data-filter="all">Tous</button>
+                <button class="timeline-filter" data-filter="education">Éducation</button>
+                <button class="timeline-filter" data-filter="work">Expérience</button>
+                <button class="timeline-filter" data-filter="project">Projets</button>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-progress"></div>
+
+                <div class="timeline-item" data-category="education">
+                    <div class="timeline-node">🎓</div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023 - 2028</div>
+                        <h3 class="timeline-title">Expert en technologies de l'information</h3>
+                        <div class="timeline-company">EPITECH — Paris</div>
+                        <p class="timeline-description">Formation en ingénierie logicielle, projets pratiques et mise en situation professionnelle.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-category="education">
+                    <div class="timeline-node">📚</div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020 - 2023</div>
+                        <h3 class="timeline-title">Baccalauréat Général et Technologique</h3>
+                        <div class="timeline-company">Lycée Européen — Villers-Cotterêts</div>
+                        <p class="timeline-description">Formation secondaire et préparation aux études supérieures en informatique.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-category="work">
+                    <div class="timeline-node">💼</div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Sept 2024 - Déc 2024</div>
+                        <h3 class="timeline-title">Développeur Full-Stack (Stage)</h3>
+                        <div class="timeline-company">Alltoo — Paris</div>
+                        <p class="timeline-description">Maintenance de CRM, analyse de données et création d'un site web no-code.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-category="work">
+                    <div class="timeline-node">⭐</div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Avril 2025 - actuel</div>
+                        <h3 class="timeline-title">Animateur polyvalent (Game Master)</h3>
+                        <div class="timeline-company">Rashomon Escape</div>
+                        <p class="timeline-description">Animation de sessions d'escape game et gestion de l'expérience client.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-category="work">
+                    <div class="timeline-node">🔧</div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Juin 2023 - Sept 2023</div>
+                        <h3 class="timeline-title">Technicien polyvalent</h3>
+                        <div class="timeline-company">Alliance Piscines & Spas — Villers-Cotterêts</div>
+                        <p class="timeline-description">Vente, gestion magasins, réseaux sociaux et site vitrine no-code.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-category="work">
+                    <div class="timeline-node">🤝</div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">Oct 2023 - actuel</div>
+                        <h3 class="timeline-title">Ambassadeur bénévole</h3>
+                        <div class="timeline-company">EPITECH — Paris</div>
+                        <p class="timeline-description">Représentation de l'école lors d'événements, présentation des formations.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-category="project">
+                    <div class="timeline-node">🚀</div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024 - 2025</div>
+                        <h3 class="timeline-title">Dashboard automatisé</h3>
+                        <div class="timeline-company">Projet personnel</div>
+                        <p class="timeline-description">Dashboard analytique regroupant les données d'empreinte sur les réseaux sociaux et site web, mis à jour périodiquement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projets</h2>
+                <p class="section-subtitle">Sélection de projets représentatifs</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image ecommerce"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">E-Commerce Platform (exemple)</h3>
+                        <p class="portfolio-description">Solution e-commerce moderne avec analytics et processus de commande optimisé.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image analytics"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Analytics Dashboard</h3>
+                        <p class="portfolio-description">Dashboard interactif avec visualisations et filtres avancés.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image music"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Music Streaming (concept)</h3>
+                        <p class="portfolio-description">Prototype mobile-first avec animations et lecture offline.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Disponible pour stage — mars 2026 à juillet 2026</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Me contacter</h3>
+                    <p>Je suis à la recherche d'un stage pour la période <strong>mars 2026 → juillet 2026</strong>. Je suis disponible pour des entretiens et des missions en présentiel à Paris ou à distance.</p>
+
+                    <div class="contact-details">
+                        <h4>Informations</h4>
+                        <ul>
+                            <li>Âge : 19 ans</li>
+                            <li>Email : <a href="mailto:zoltan.babko@epitech.eu">zoltan.babko@epitech.eu</a></li>
+                            <li>Téléphone : 06 77 32 08 20</li>
+                            <li>Localisation : Paris, France</li>
+                            <li>Langues : Français (natif), Anglais (niveau 750), Espagnol (B1)</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-details">
+                        <h4>Disponible pour</h4>
+                        <ul>
+                            <li>Stage (mars → juillet 2026)</li>
+                            <li>Temps partiel (jeudis & vendredis)</li>
+                            <li>Projets freelance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="subject" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-textarea" id="message" rows="5" placeholder="Message ..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2025 - Mon Site Web</p>
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2026 Zoltan Babko. Tous droits réservés.</p>
+            <div class="footer-credits">
+                <a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
+                    <span class="footer-credit-icon">📝</span>
+                    <span>Google Fonts</span>
+                </a>
+                <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
+                    <span class="footer-credit-icon">📸</span>
+                    <span>Unsplash</span>
+                </a>
+                <a href="https://cdnjs.com" target="_blank" rel="noopener noreferrer" class="footer-credit-link">
+                    <span class="footer-credit-icon">⚡</span>
+                    <span>CDNJS</span>
+                </a>
+            </div>
+        </div>
     </footer>
+
+    <script src="tooplate-titan-script.js"></script>
 </body>
 </html>
