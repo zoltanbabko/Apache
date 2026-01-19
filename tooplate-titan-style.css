@@ -1123,14 +1123,14 @@ section {
 .portfolio-card:hover .portfolio-image::before {
     left: 100%;
 }
-.portfolio-image.ecommerce {
-    background-image: url('images/portfolio-ecommerce.jpg');
+.portfolio-image.image1 {
+    background-image: url('images/portfolio-1.png');
 }
-.portfolio-image.analytics {
-    background-image: url('images/portfolio-analytics.jpg');
+.portfolio-image.image2 {
+    background-image: url('images/portfolio-2.png');
 }
-.portfolio-image.music {
-    background-image: url('images/portfolio-music.jpg');
+.portfolio-image.image3 {
+    background-image: url('images/portfolio-3.png');
 }
 .portfolio-content {
     padding: 2rem;
